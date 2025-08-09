@@ -1,0 +1,155 @@
+===========================================
+INFORMASI SENSITIF - PEMERINTAH KOTA XX
+===========================================
+
+PERINGATAN: File ini berisi informasi sensitif yang sengaja dibuat accessible
+untuk testing keamanan. JANGAN gunakan di lingkungan produksi!
+
+===========================================
+KONFIGURASI DATABASE
+===========================================
+Database Host: localhost
+Database Name: pemkot_xx_db
+Database User: pemkot_admin
+Database Password: admin123456
+Database Port: 3306
+
+===========================================
+KONFIGURASI SERVER
+===========================================
+Server IP: 192.168.1.100
+Server Hostname: pemkot-xx-server
+Server OS: Ubuntu 20.04 LTS
+Web Server: Apache 2.4.41
+PHP Version: 7.4.3
+MySQL Version: 8.0.25
+
+===========================================
+KONFIGURASI EMAIL
+===========================================
+SMTP Server: smtp.pemkot-xx.go.id
+SMTP Port: 587
+SMTP User: admin@pemkot-xx.go.id
+SMTP Password: email123456
+Email Admin: admin@pemkot-xx.go.id
+
+===========================================
+KONFIGURASI FTP
+===========================================
+FTP Server: ftp.pemkot-xx.go.id
+FTP Port: 21
+FTP User: ftp_admin
+FTP Password: ftp123456
+FTP Directory: /var/www/html/
+
+===========================================
+KONFIGURASI SSH
+===========================================
+SSH Port: 22
+SSH User: pemkot_admin
+SSH Key: pemkot-xx-rsa-key
+SSH Directory: /home/pemkot_admin/.ssh/
+
+===========================================
+INFORMASI ADMIN
+===========================================
+Admin Username: admin
+Admin Password: admin123
+Admin Email: admin@pemkot-xx.go.id
+Admin Phone: +62-21-12345678
+Admin Address: Jl. Pemerintahan No. 1, Kota XX
+
+===========================================
+INFORMASI SISTEM
+===========================================
+System Name: Sistem Informasi Pemerintahan Kota XX
+System Version: v2.1.0
+System Developer: Tim IT Pemerintah Kota XX
+System Contact: it@pemkot-xx.go.id
+System Support: support@pemkot-xx.go.id
+
+===========================================
+INFORMASI KEAMANAN
+===========================================
+Firewall: UFW (Uncomplicated Firewall)
+Antivirus: ClamAV
+Backup Schedule: Daily at 02:00 AM
+Backup Location: /backup/pemkot-xx/
+SSL Certificate: Let's Encrypt
+SSL Expiry: 2024-12-31
+
+===========================================
+INFORMASI JARINGAN
+===========================================
+Internal Network: 192.168.1.0/24
+DMZ Network: 10.0.0.0/24
+Gateway: 192.168.1.1
+DNS Primary: 8.8.8.8
+DNS Secondary: 8.8.4.4
+
+===========================================
+INFORMASI APLIKASI
+===========================================
+WordPress Version: 6.0.1
+WordPress Admin: wordpress-victim
+WordPress Password: admin123
+WordPress URL: http://localhost:8000
+
+Contact Form 7 Version: 5.7.3
+Contact Form 7 Vulnerable: YES
+File Upload Directory: /var/www/html/wordpress/wp-content/uploads/
+
+===========================================
+INFORMASI VULNERABILITIES
+===========================================
+1. Unrestricted File Upload
+   - Location: /upload.php, /admin/upload.php
+   - Risk: CRITICAL
+   - Description: Tidak ada validasi tipe file
+
+2. File Execution
+   - Location: /uploads/ directory
+   - Risk: CRITICAL
+   - Description: File PHP dapat dieksekusi langsung
+
+3. Directory Listing
+   - Location: Semua direktori
+   - Risk: HIGH
+   - Description: Struktur direktori dapat dilihat publik
+
+4. Weak Authentication
+   - Location: Admin panel
+   - Risk: HIGH
+   - Description: Kredensial login yang lemah
+
+5. Information Disclosure
+   - Location: File ini dan file konfigurasi lainnya
+   - Risk: MEDIUM
+   - Description: Informasi sensitif dapat diakses publik
+
+===========================================
+INFORMASI TESTING
+===========================================
+File ini dapat diakses melalui:
+- http://localhost:8080/sensitive-info.txt
+- http://localhost:8000/sensitive-info.txt
+
+Untuk testing keamanan, coba akses:
+- http://localhost:8080/uploads/
+- http://localhost:8080/admin/
+- http://localhost:8000/wp-content/uploads/
+- http://localhost:8000/wp-config.php
+
+===========================================
+PERINGATAN KEAMANAN
+===========================================
+SISTEM INI SENGJAJA DIBUAT VULNERABLE UNTUK TESTING KEAMANAN!
+
+JANGAN GUNAKAN DI LINGKUNGAN PRODUKSI!
+JANGAN EXPOSE KE INTERNET PUBLIK!
+HAPUS SETELAH SELESAI TESTING!
+GUNAKAN HANYA DI LINGKUNGAN YANG TERKONTROL!
+
+===========================================
+TIMESTAMP: <?php echo date('Y-m-d H:i:s'); ?>
+===========================================
